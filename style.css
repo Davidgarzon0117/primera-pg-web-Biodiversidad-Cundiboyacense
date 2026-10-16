@@ -1,0 +1,278 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-image: url(https://cards.algoreducation.com/_next/image?url=https%3A%2F%2Ffiles.algoreducation.com%2Fproduction-ts%2F__S3__a51318ba-be67-49d8-9317-ce53f8ce39ca&w=3840&q=75);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.container .video-inicial {
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.row .p-inicial {
+    font-size: 20px;
+}
+
+.imagen img {
+    width: 45%;
+    border-radius: 15px;
+}
+
+.navbar .logo img {
+    height: 85px;
+    margin-right: 35px;
+    transition: all 0.5s;
+}
+
+.navbar .logo {
+    font-size: 25px;
+    margin-left: 45px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .logo:hover {
+    color: blue;
+}
+
+.navbar .logo img:hover {
+    transform: scale(1.2);
+}
+
+.navbar {
+    background-color: rgb(221, 228, 216);
+    height: 125px;
+    padding: 10px 5%;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.contenido .submenu a {
+    color: #0e0b0b;
+    display: block;
+    text-decoration: none;
+}
+
+.contenido .submenu {
+    position: absolute;
+    display: none;
+    background-color: rgb(208, 228, 193);
+    z-index: 10;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.contenido li:hover ul {
+    display: block;
+    color: blue;
+    visibility: visible;
+    opacity: 0.8;
+}
+
+.navbar .contenido li:hover {
+    transform: scale(1.1);
+}
+
+.navbar .contenido li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.navbar .contenido li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.navbar .contenido li a:hover {
+    color: blue;
+}
+
+.navbar .btn button {
+    margin-right: auto;
+    background-color: rgba(231, 229, 225, 0.329);
+    color: rgb(0, 0, 0);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar .btn button:hover {
+    background-color: cornflowerblue;
+    color: blue;
+    transform: scale(0.9);
+}
+
+.container {
+    margin: 50px 5%;
+    background-color: #fafafa85;
+    border-radius: 50px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.row {
+    margin: 20px auto;
+    justify-content: center;
+    padding: 20px;
+    
+}
+
+.row .card {
+    align-content: center;
+    background-color: #e9ecef7c;
+    height: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+}
+
+.row .card p {
+    font-size: 15px;
+    text-align: justify;
+    
+}
+
+.row .card h2 {
+    text-align: center;
+}
+.row .punto{
+   margin-left: 10px;
+    
+}
+#map {
+    height: 25rem;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12 {
+    background-color: #e9ecef7c;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: rgb(221, 228, 216);
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    
+}
+
+.col-md-4 h3 {
+    color: rgb(14, 8, 8);
+    text-align: center;
+}
+
+.col-md-4 li {
+    list-style: none;
+}
+
+.col-md-4 li a {
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.col-md-4 li a:hover {
+    transform: scale(1.2);
+    color: rgb(209, 15, 15);
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 992px) {
+    .navbar {
+        padding: 10px 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .navbar .logo {
+        font-size: 20px;
+    }
+
+    .navbar .btn button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        height: auto;
+        padding: 10px 5%;
+    }
+
+    .navbar .logo {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    .navbar .btn button {
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        margin: 20px 5px;
+    }
+
+    .row {
+        margin: 10px auto;
+    }
+
+    .row .card {
+        margin-bottom: 10px;
+    }
+
+    .row .card p {
+        font-size: 14px;
+    }
+
+    .col-md-4 h3 {
+        font-size: 16px;
+    }
+}
